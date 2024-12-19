@@ -1,0 +1,20 @@
+/* Animation for the background image */
+@keyframes backgroundZoom {
+    0% {
+        transform: scale(1); /* No zoom */
+        opacity: 0; /* Start fade-in */
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: scale(1.04); /* Slight zoom */
+        opacity: 0; /* Fade out */
+    }
+}
+
+/* Apply animation only to the background image */
+.bg-animate {
+    animation: backgroundZoom 10s ease-in-out infinite; /* Zoom and fade-in every 5 seconds */
+}
